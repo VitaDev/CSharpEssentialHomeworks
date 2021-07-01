@@ -1,4 +1,5 @@
-﻿using System;
+﻿using HW_001_1;
+using System;
 
 namespace Essential_homeworks
 {
@@ -6,7 +7,8 @@ namespace Essential_homeworks
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Adress adress = new Adress(1, "Ukraine", "Odessa", "Shevchenko", "22", "2");
+            adress.Output();
         }
     }
 }
