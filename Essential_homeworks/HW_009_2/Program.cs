@@ -34,7 +34,18 @@ namespace HW_009_2
                         Console.WriteLine(del(x, y));
                         break;
                     case 4:
-                        del = (x, y) => { return Math.Round((double)x / y, 1); };
+                        del = (x, y) =>
+                        {
+                            if (y != 0)
+                            {
+                                return Math.Round((double)x / y, 1);
+                            }
+                            else 
+                            {
+                                Console.WriteLine("Деление на ноль");
+                                return 0;
+                            }
+                        };
                         Console.WriteLine(del(x, y));
                         break;
                     case 5:
