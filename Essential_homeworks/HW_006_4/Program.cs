@@ -12,9 +12,9 @@ namespace HW_006_4
                 updatedMas[i] = mas[i];
             }
             updatedMas[updatedMas.Length - 1] = newNumber;
-            for (int i = 0; i < updatedMas.Length; i++)
+            for (int i = 0; i < updatedMas.Length-1; i++)
             {
-                for (int j = i+1; j < updatedMas.Length-1; j++)
+                for (int j = i+1; j < updatedMas.Length; j++)
                 {
                     if (updatedMas[j] < updatedMas[i])
                     {
